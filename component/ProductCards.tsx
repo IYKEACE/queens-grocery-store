@@ -8,7 +8,7 @@ interface ProductCardProps {
 
 const ProductCards = ({ product }: ProductCardProps) => {
   return (
-    <div className="group flex flex-col gap-3">
+    <div className="group flex flex-col gap-3 mb-">
       <div className="relative aspect-[4/5] bg-[#F3F3F1] rounded-2xl overflow-hidden p-8">
         {product.tag && (
           <span className="absolute z-10 top-4 left-4 bg-white/12 backdrop-blur-sm text-[10px] uppercase px-3 py-1 rounded-full font-medium border border-black/60 cursor-pointer text-black">

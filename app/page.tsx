@@ -4,6 +4,7 @@ import HeroSection from "@/component/HeroSection";
 import Footer from "@/component/Footer";
 import Product from "@/component/Product";
 import ProductCards from "@/component/ProductList";
+import Kitchen from "@/component/Kitchen";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <Product />
         <ProductCards/>
+        <Kitchen />
         <Footer />
       </main>
     </div>

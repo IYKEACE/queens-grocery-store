@@ -22,9 +22,9 @@ const HeroSection = () => {
           The Eco-friendly kitchen niche with a sense of urgency. Much like the
           original banner.
         </p>
-        <button className="mt-8  flex  gap-2 bg-white text-black px-10 py-4 rounded-full w-full md:w-fit font-semibold hover:bg-opacity-90 transition-all uppercase text-sm tracking-widest group ">
+        <button className="mt-8 flex items-center justify-center gap-2 bg-white text-black px-10 py-4 rounded-full w-fit mx-0 font-semibold hover:bg-opacity-90 transition-all uppercase text-sm tracking-widest group">
           <span className="text-sm font-medium">Shop Now</span>
-          <FiArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          <FiArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-lg" />
         </button>
       </div>
       <div className="hidden md:flex absolute bottom-45 right-12 lg:right-24 backdrop-blur-xl bg-white/10 border border-white/20 p-8 rounded-2xl text-white w-45 flex-col gap-4">
