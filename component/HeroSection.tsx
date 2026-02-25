@@ -29,7 +29,7 @@ const HeroSection = () => {
       </div>
       <div className="hidden md:flex absolute bottom-45 right-12 lg:right-24 backdrop-blur-xl bg-white/10 border border-white/20 p-8 rounded-2xl text-white w-45 flex-col gap-4">
         <div className="justify-between items-start">
-          <div className="text-[10px] uppercase tracking-[0.2em] leading-relaxed opacity-70">
+          <div className="text-[8px] uppercase tracking-[0.2em] leading-relaxed opacity-70">
             <p>Natural.</p>
             <p>Sustainable.</p>
             <p>Eco-conscious.</p>

@@ -17,7 +17,6 @@ const ProductHeader = () => {
           </span>
         </h2>
       </div>
-
       <div className="group cursor-pointer flex items-center gap-2 border-b border-black pb-1">
         <span className="text-sm font-medium">More products</span>
         <FiArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
