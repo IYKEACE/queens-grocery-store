@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="relative w-full h-[80vh] md:h-[820px] overflow-hidden bg-gray-900">
       <Image
-        src="/green-kitchen2.jpg"
+        src="/kitchen.jpg"
         alt="Green Kitchenware"
         fill
         className="object-cover"
