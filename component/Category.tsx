@@ -40,7 +40,7 @@ const Category = () => {
                 {cat.name}
               </h3>
               <button className="bg-white text-black px-6 py-2 rounded-full flex items-center gap-2 text-xs font-bold uppercase tracking-tighter hover:bg-[#0A4235] hover:text-white transition-all duration-300">
-                Shop{" "}
+                Shop
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

@@ -24,10 +24,7 @@ const Navbar = () => {
           Homedine
         </h1>
       </div>
-
-      {/* RIGHT SECTION: Search & Icons */}
       <div className="flex items-center gap-3 md:gap-6">
-        {/* Search Input: Hidden on mobile, shows only as icon */}
         <div className="relative hidden md:flex items-center">
           <input
             type="text"
@@ -36,8 +33,6 @@ const Navbar = () => {
           />
           <FiSearch className="absolute right-3 w-4 h-4 text-white/70" />
         </div>
-
-        {/* Mobile Search Icon (Only visible on small screens) */}
         <FiSearch className="md:hidden text-xl" />
 
         <FiUser className="w-5 h-5 hidden md:block cursor-pointer hover:opacity-70" />
@@ -47,8 +42,6 @@ const Navbar = () => {
           <span className="absolute -top-1 -right-1 bg-green-500 w-2 h-2 rounded-full"></span>
         </div>
       </div>
-
-      {/* MOBILE SIDEBAR OVERLAY */}
       <div
         className={`fixed inset-0 bg-black z-[100] flex flex-col p-8 transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}
       >
