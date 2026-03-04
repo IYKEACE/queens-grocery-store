@@ -3,10 +3,14 @@ import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import { CATEGORIES } from "@/data/Categories";
 import { LuSparkle } from "react-icons/lu";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const Category = () => {
   return (
-    <div className="px-6 md:px-12 py-16 bg-white">
+    <div className="relative px-6 md:px-12 py-16 bg-white">
+      <button className="absolute left-8 top-[55%] z-30 ... cursor-pointer bg-white p-2 rounded-full opacity-80 hover:opacity-100 transition">
+        <FiChevronLeft />
+      </button>
       <div className="mb-4">
         <p className="text-gray-500 tracking-widest text-xl mb-2">
           Explore our thoughtful and
@@ -47,6 +51,9 @@ const Category = () => {
           </div>
         ))}
       </div>
+      <button className="absolute right-8 top-[55%] z-30 ... cursor-pointer bg-white p-2 rounded-full opacity-80 hover:opacity-100 transition">
+        <FiChevronRight />
+      </button>
     </div>
   );
 };
