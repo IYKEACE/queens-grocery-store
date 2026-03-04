@@ -25,4 +25,9 @@ export const CATEGORIES: CategoryItem[] = [
     name: "FreshPitcher",
     image: "/Steel.jpeg",
   },
+  {
+    id: 5,
+    name: "EcoSpoonery",
+    image: "/spoonery.jpeg",
+  },
 ];
