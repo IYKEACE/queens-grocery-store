@@ -22,13 +22,13 @@ const Category = () => {
     <div className="px-6 md:px-12 py-16 bg-white relative group/section">
       <div className="flex justify-between items-end mb-12">
         <div>
-          <p className="text-gray-500 tracking-widest text-xl mb-2">
+          <p className="text-gray-500 text-xl mb-2">
             Explore our thoughtful and
           </p>
-          <h2 className="text-2xl md:text-4xl font-serif flex flex-col md:flex-row md:items-center gap-x-4 leading-none">
-            <span className="text-gray-500">planet-first</span>
+          <h2 className="text-2xl md:text-3xl font-serif flex items-center gap-3">
+            <span className="text-gray-500 gap-2">planet-first</span>
             <span className="inline-flex items-center gap-2 italic font-light">
-              <LuSparkle className="text-black-600 w-5 h-5" />
+              <LuSparkle className="text-black-600 " />
               <span className="text-black-600"> Categories</span>
             </span>
           </h2>
