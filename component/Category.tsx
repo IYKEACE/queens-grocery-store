@@ -1,14 +1,15 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import { CATEGORIES } from "@/data/Categories";
 import { LuSparkle } from "react-icons/lu";
+import { useRef, useState } from "react";
 
 const Category = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   const handleScroll = () => {
     if (scrollRef.current) {
       const card = scrollRef.current.querySelector("div");
@@ -36,9 +37,7 @@ const Category = () => {
   return (
     <div className="px-6 md:px-12 py-16 bg-white relative">
       <div className="mb-5">
-        <p className="text-gray-400 text-xl mb-2">
-          Explore our thoughtful and
-        </p>
+        <p className="text-gray-400 text-xl mb-2">Explore our thoughtful and</p>
         <h2 className="text-4xl md:text-4xl font-serif flex flex-col md:flex-row md:items-center gap-x-4 leading-none">
           <span className="text-gray-400">planet-first</span>
           <span className="inline-flex items-center gap-2 italic font-light text-black">

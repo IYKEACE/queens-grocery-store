@@ -40,4 +40,20 @@ export const PRODUCTS: Product[] = [
     tag: "New",
     colors: ["#D4A373", "#CCD5AE"],
   },
+  {
+    id: 5,
+    name: "Reusable drinkware for a \n greener lifestyle",
+    price: 43.85,
+    image: "/Water-bottles.jpg",
+    tag: "Premium",
+    colors: ["#4F6D7A", "#C0D6DF", "#EAE6E1"],
+  },
+  {
+    id: 6,
+    name: "Kettle & Toaster eco-friendly \n meals",
+    price: 143.65,
+    image: "/Kettle.jpg",
+    tag: "New",
+    colors: ["#D4A373", "#CCD5AE"],
+  },
 ];

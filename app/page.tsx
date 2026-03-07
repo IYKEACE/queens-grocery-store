@@ -7,6 +7,7 @@ import ProductCards from "@/component/ProductList";
 import Kitchen from "@/component/Kitchen";
 import Materials from "@/component/Materials";
 import Category from "@/component/Category";
+import Gallery from "@/component/Gallery";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Kitchen />
         <Materials />
         <Category />
+        <Gallery />
         <Footer />
       </main>
     </div>

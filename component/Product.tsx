@@ -3,8 +3,9 @@ import { LuSparkle } from "react-icons/lu";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const ProductHeader = () => {
+  
   return (
-    <div className="flex flex-col md:flex-row mt-16 justify-between items-end px-6 md:px-12 gap-4 mb-12">
+    <div className="flex flex-col md:flex-row mt-16 justify-between items-end px-6 md:px-12 gap-4">
       <div>
         <p className="text-gray-500 uppercase tracking-widest text-xs mb-2">
           Eco Essentials Planet-Friendly
