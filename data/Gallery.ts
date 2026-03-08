@@ -2,16 +2,16 @@ export const GALLERY_ITEMS = [
   {
     id: 1,
     name: "SizzlePro Non-Stick Pan",
-    image: "/pan.jpg",
+    image: "/pan.jpeg",
   },
   {
     id: 2,
     name: "Grain Slice Board Duo",
-    image: "/board.jpg",
+    image: "/Grain slice.jpeg",
   },
   { id: 3, 
     name: "Bamboo Utensil Set", 
-    image: "/utensils.jpg" 
+    image: "/spoonset.jpeg" 
   },
   { id: 4, 
     name: "Glow Pot Ceramic", 
@@ -20,6 +20,6 @@ export const GALLERY_ITEMS = [
   { id: 5, 
     
     name: "StoneSip Ceramic Cup", 
-    image: "/cup.jpg" 
+    image: "/pot.jpg" 
   },
 ];

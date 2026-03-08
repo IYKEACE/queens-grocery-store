@@ -22,52 +22,54 @@ const Gallery = () => {
 
   return (
     <section className="px-6 md:px-12 py-20 bg-white">
-      {/* 1. Gallery Heading */}
-      <div className="mb-12">
-        <p className="text-gray-400 text-[10px] uppercase tracking-[0.2em] mb-2">
+      <div className="mb-5">
+        <p className="text-gray-400 text-xl mb-2">
           Thoughtful, Planet-Prioritizing Ideas
         </p>
-        <h2 className="text-4xl md:text-6xl font-serif flex flex-col md:flex-row md:items-center leading-none">
-          <span className="text-gray-200 lowercase">and Inspiration</span>
-          <span className="inline-flex items-center gap-2 italic font-light text-black md:ml-4">
-            <LuSparkle className="text-gray-300 w-6 h-6 rotate-12" />
-            <span className="lowercase">Gallery</span>
+        <h2 className="text-4xl md:text-4xl font-serif flex flex-col md:flex-row md:items-center gap-x-4 leading-none">
+          <span className="text-gray-400">and Inspiration</span>
+          <span className="inline-flex items-center gap-2 italic font-light text-black">
+            <LuSparkle className="text-black-300 w-6 h-6 rotate-12" />
+            <span>Gallery</span>
           </span>
         </h2>
       </div>
-
-      {/* 2. The Mosaic Scrolling Container */}
       <div
         ref={scrollRef}
         onScroll={handleScroll}
-        className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory items-end"
+        className="flex gap-4 md:gap-8 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory items-start"
       >
         {GALLERY_ITEMS.map((item, index) => (
           <div
             key={item.id}
-            className={`gallery-card relative flex-shrink-0 snap-start group overflow-hidden rounded-[2rem] 
-              ${index % 3 === 1 ? "w-[80%] md:w-[400px] aspect-[4/5]" : "w-[60%] md:w-[300px] aspect-square"} 
+            className={`gallery-card relative flex-shrink-0 snap-start group overflow-hidden rounded-[2.5rem] transition-all duration-700
+              ${
+                index === 0 || index === 2
+                  ? "w-[65%] md:w-[300px] h-[300px] md:h-[350px]" // 1st and 3rd are shorter
+                  : "w-[80%] md:w-[420px] h-[400px] md:h-[550px]" // 2nd (and others) are taller
+              } 
             `}
           >
             <Image
               src={item.image}
               alt={item.name}
               fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
             />
 
-            {/* Dark Overlay for Text */}
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-500" />
+            {/* Minimalist Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-            {/* The Floating Label (Bottom Left) */}
-            <div className="absolute bottom-6 left-6 right-6 text-white translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-              <p className="text-sm font-serif italic mb-1">{item.name}</p>
-              <div className="w-8 h-[1px] bg-white/50" />{" "}
-              {/* Decorative line */}
+            {/* Bottom-aligned text for that Gallery look */}
+            <div className="absolute bottom-8 left-8 text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+              <p className="text-sm font-serif italic tracking-wide">
+                {item.name}
+              </p>
             </div>
           </div>
         ))}
       </div>
+
       {/* 3. Pagination Dots */}
       <div className="flex justify-center items-center gap-3 mt-10">
         {[0, 1, 2].map((i) => (
